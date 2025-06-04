@@ -1,0 +1,48 @@
+SCOM Management Pack for Grafana Alertmanager
+============================================
+
+Release Information
+-------------------
+Version: 25.5.0.0
+Build Date: 2025-06-04
+Framework: SCOM MP Framework v7.0.5
+Target Platform: SCOM 2016+
+
+Package Contents
+----------------
+1. Opslogix.Grafana.Labs.Grafana.Alertmanager.mp (40KB) - Main Management Pack
+2. Opslogix.Grafana.Labs.Grafana.AlertManager.mpb (44KB) - Main sealed bundle
+3. Opslogix.Grafana.Labs.Presentation.mp (5KB) - Presentation components
+4. Opslogix.Grafana.Labs.Presentation.mpb (32KB) - Presentation sealed bundle
+5. Grafana.Monitoring.mp (4.5KB) - Additional monitoring
+6. Grafana.Monitoring.mpb (32KB) - Monitoring sealed bundle
+
+Installation Order
+------------------
+1. Import Opslogix.Grafana.Labs.Presentation.mpb first
+2. Import Opslogix.Grafana.Labs.Grafana.AlertManager.mpb second
+3. Configure Run As Account and Resource Pool
+4. Add Grafana instances using PowerShell scripts
+
+Key Features
+------------
+- Automatic discovery of Grafana alert workflows
+- Real-time alert synchronization between Grafana and SCOM
+- Multi-organization support
+- Secure API authentication
+- Customizable monitoring thresholds
+- Event logging for troubleshooting
+
+Requirements
+------------
+- SCOM 2016 or later
+- Grafana 9.x or later
+- .NET Framework 4.7.2+
+- Windows Server with SCOM Management Server
+- Grafana API access with appropriate permissions
+
+Support
+-------
+For detailed installation and configuration instructions, see:
+- README.md - Complete documentation
+- DEPLOYMENT_GUIDE.md - Step-by-step deployment instructions 
